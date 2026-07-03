@@ -1,0 +1,984 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Poppins;
+    background:#081C15;
+    color:white;
+    overflow-x:hidden;
+
+}
+
+
+.navbar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:25px 8%;
+
+    position:absolute;
+    width:100%;
+
+    z-index:1000;
+
+}
+
+
+.logo{
+
+    font-family:Cinzel;
+    font-size:30px;
+    color:#D4AF37;
+
+}
+
+
+.navbar ul{
+
+    display:flex;
+    gap:35px;
+
+    list-style:none;
+
+}
+
+
+.navbar a{
+
+    color:white;
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+
+.navbar a:hover{
+
+    color:#D4AF37;
+
+}
+
+
+.hero{
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(8,28,21,.7),
+        rgba(8,28,21,.7)
+    ),
+
+    url("images/hero.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+}
+
+
+.hero-content{
+
+    width:900px;
+
+}
+
+
+.hero h1{
+
+    font-family:Cinzel;
+
+    font-size:72px;
+
+    margin-bottom:20px;
+
+    color:#F8F4E9;
+
+}
+
+
+.hero p{
+
+    font-size:22px;
+
+    color:#ddd;
+
+}
+
+
+.buttons{
+
+    margin-top:50px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+}
+
+
+.btn{
+
+    padding:18px 40px;
+
+    border:none;
+
+    cursor:pointer;
+
+    border-radius:100px;
+
+    font-size:18px;
+
+    transition:.4s;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+.gold{
+
+    background:#B87333;
+
+    color:white;
+
+}
+
+
+.gold:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 15px 40px rgba(212,175,55,.5);
+
+}
+
+
+.outline{
+
+    background:transparent;
+
+    border:2px solid #D4AF37;
+
+    color:#D4AF37;
+
+}
+
+
+.outline:hover{
+
+    background:#D4AF37;
+
+    color:black;
+
+}
+
+
+/* =======================
+FEATURED COLLECTIONS
+========================== */
+
+.collections{
+
+    padding:120px 8%;
+
+    background:#0B241D;
+
+    text-align:center;
+
+}
+
+
+.collections h2{
+
+    font-family:Cinzel;
+
+    font-size:55px;
+
+    color:#D4AF37;
+
+}
+
+
+.subtitle{
+
+    margin-top:15px;
+
+    color:#ddd;
+
+    font-size:18px;
+
+}
+
+
+.products{
+
+    margin-top:70px;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:40px;
+
+}
+
+
+.card{
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.1);
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    transition:.5s;
+
+}
+
+
+.card:hover{
+
+    transform:
+    translateY(-20px)
+    scale(1.03);
+
+    box-shadow:
+    0 25px 60px
+    rgba(212,175,55,.25);
+
+}
+
+
+.card img{
+
+    width:100%;
+
+    height:280px;
+
+    object-fit:cover;
+
+}
+
+
+.card-content{
+
+    padding:30px;
+
+}
+
+
+.card-content h3{
+
+    color:#D4AF37;
+
+    margin-bottom:15px;
+
+}
+
+
+.card-content p{
+
+    color:#ddd;
+
+    line-height:1.8;
+
+}
+
+
+.buy-btn{
+
+    margin-top:25px;
+
+    padding:14px 35px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:
+    linear-gradient(
+        45deg,
+        #B87333,
+        #D4AF37
+    );
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+
+.buy-btn:hover{
+
+    transform:
+    translateY(-5px);
+
+    box-shadow:
+    0 15px 40px
+    rgba(212,175,55,.4);
+
+}
+
+
+.buy-btn:active{
+
+    transform:
+    scale(.90);
+
+}
+
+/* ===================
+ARTISANS
+=================== */
+
+.artisans{
+
+    padding:120px 8%;
+
+    background:#081C15;
+
+    text-align:center;
+
+}
+
+.artisans h2{
+
+    font-size:55px;
+
+    color:#D4AF37;
+
+    font-family:Cinzel;
+
+}
+
+.artisans p{
+
+    margin-top:20px;
+
+    color:#ddd;
+
+}
+
+
+.artisan-box{
+
+    margin-top:70px;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+
+.artisan-card{
+
+    background:rgba(255,255,255,.06);
+
+    padding:40px;
+
+    border-radius:30px;
+
+    transition:.4s;
+
+}
+
+
+.artisan-card:hover{
+
+    transform:translateY(-15px);
+
+    box-shadow:
+    0 20px 50px rgba(212,175,55,.25);
+
+}
+
+
+.artisan-card h3{
+
+    color:#D4AF37;
+
+    margin-bottom:20px;
+
+}
+
+
+/* ===================
+REVIEWS
+=================== */
+
+.reviews{
+
+    background:#0B241D;
+
+    padding:120px 8%;
+
+    text-align:center;
+
+}
+
+
+.reviews h2{
+
+    font-family:Cinzel;
+
+    color:#D4AF37;
+
+    font-size:50px;
+
+}
+
+
+.review-grid{
+
+    margin-top:60px;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+
+}
+
+
+.review-card{
+
+    background:white;
+
+    color:black;
+
+    padding:40px;
+
+    border-radius:25px;
+
+    transition:.4s;
+
+}
+
+
+.review-card:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+/* ===================
+FOOTER
+=================== */
+
+footer{
+
+    background:black;
+
+    text-align:center;
+
+    padding:60px 20px;
+
+}
+
+
+footer h2{
+
+    color:#D4AF37;
+
+    margin-bottom:15px;
+
+}
+
+
+footer p{
+
+    color:#ddd;
+
+}
+
+
+footer small{
+
+    display:block;
+
+    margin-top:20px;
+
+    color:gray;
+
+}
+
+
+/* ===================
+WHATSAPP
+=================== */
+
+.whatsapp{
+
+    position:fixed;
+
+    bottom:30px;
+
+    right:30px;
+
+    width:70px;
+
+    height:70px;
+
+    background:#25D366;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    font-size:35px;
+
+    color:white;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.3);
+
+    animation:float 2s infinite;
+
+}
+
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ===================
+LOADER
+=================== */
+
+#loader{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#081C15;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:99999;
+
+    transition:1s;
+
+}
+
+
+#loader h1{
+
+    font-family:Cinzel;
+
+    color:#D4AF37;
+
+    font-size:50px;
+
+}
+
+
+/* ===================
+NEWSLETTER
+=================== */
+
+.newsletter{
+
+    padding:120px 8%;
+
+    background:#102820;
+
+    text-align:center;
+
+}
+
+
+.newsletter h2{
+
+    color:#D4AF37;
+
+    font-size:50px;
+
+    font-family:Cinzel;
+
+}
+
+
+.newsletter p{
+
+    margin-top:20px;
+
+    color:#ddd;
+
+}
+
+
+.subscribe{
+
+    margin-top:40px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+
+.subscribe input{
+
+    width:350px;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:50px;
+
+    outline:none;
+
+}
+
+
+.subscribe button{
+
+    padding:18px 40px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:linear-gradient(
+        45deg,
+        #B87333,
+        #D4AF37
+    );
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+.subscribe button:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+/* ===================
+BACK TO TOP
+=================== */
+
+#topBtn{
+
+    position:fixed;
+
+    bottom:120px;
+
+    right:30px;
+
+    width:60px;
+
+    height:60px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#D4AF37;
+
+    color:black;
+
+    font-size:25px;
+
+    cursor:pointer;
+
+    display:none;
+
+    z-index:999;
+
+}
+
+<!-- CULTURAL TIMELINE -->
+
+<section class="timeline">
+
+    <h2>Journey Through Chitral Heritage</h2>
+
+    <div class="timeline-box">
+
+        <div class="event">
+            <span>Ancient Era</span>
+            <p>Traditional weaving, wood carving and mountain culture flourished.</p>
+        </div>
+
+        <div class="event">
+            <span>Kalash Heritage</span>
+            <p>Unique traditions, music and handmade ornaments enriched Chitral.</p>
+        </div>
+
+        <div class="event">
+            <span>Modern Chitral</span>
+            <p>Local artisans continue preserving centuries-old craftsmanship.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- HONEY & DRY FRUITS -->
+
+<section class="organic">
+
+    <h2>Organic Treasures</h2>
+
+    <div class="organic-grid">
+
+        <div class="organic-card">
+            <h3>Mountain Honey 🍯</h3>
+            <p>Pure natural honey collected from Chitral valleys.</p>
+        </div>
+
+        <div class="organic-card">
+            <h3>Walnuts 🌰</h3>
+            <p>Fresh and nutritious mountain-grown walnuts.</p>
+        </div>
+
+        <div class="organic-card">
+            <h3>Dry Apricots 🍑</h3>
+            <p>Traditional sun-dried Chitrali apricots.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SOUVENIRS -->
+
+<section class="souvenirs">
+
+    <h2>Traditional Souvenirs</h2>
+
+    <div class="souvenir-grid">
+
+        <div class="souvenir-card">
+            🎩 Mini Pakol Models
+        </div>
+
+        <div class="souvenir-card">
+            🗝️ Handmade Keychains
+        </div>
+
+        <div class="souvenir-card">
+            🏔️ Chitral Art Prints
+        </div>
+
+        <div class="souvenir-card">
+            🪵 Wooden Decorative Crafts
+        </div>
+
+    </div>
+
+</section>
+
+/* ==========
+CONTACT
+========== */
+
+.contact-section{
+
+    padding:120px 8%;
+
+    background:#081C15;
+
+    text-align:center;
+
+}
+
+.contact-section h2{
+
+    color:#D4AF37;
+
+    font-size:50px;
+
+    font-family:Cinzel;
+
+}
+
+.contact-section form{
+
+    max-width:700px;
+
+    margin:auto;
+
+    margin-top:50px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.contact-section input,
+.contact-section textarea{
+
+    padding:20px;
+
+    border:none;
+
+    border-radius:20px;
+
+    outline:none;
+
+}
+
+.contact-section textarea{
+
+    height:150px;
+
+    resize:none;
+
+}
+
+.contact-section button{
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:linear-gradient(
+        45deg,
+        #B87333,
+        #D4AF37
+    );
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.contact-section button:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+/* ==========
+MENU BUTTON
+========== */
+
+.menu-btn{
+
+    display:none;
+
+    font-size:35px;
+
+    cursor:pointer;
+
+    color:#D4AF37;
+
+}
+
+
+/* ==========
+MOBILE
+========== */
+
+@media(max-width:900px){
+
+    .navbar ul{
+
+        display:none;
+
+    }
+
+    .menu-btn{
+
+        display:block;
+
+    }
+
+    .hero h1{
+
+        font-size:45px;
+
+    }
+
+}
